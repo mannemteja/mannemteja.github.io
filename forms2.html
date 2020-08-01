@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS2</title>
+    <link rel="stylesheet" type="text/css" href="forms2.css">
+    <script>
+        function checkField3() {
+            var field = document.getElementById("field3").value;
+            var regex = /^[A-Za-z] (3) $/;
+
+            if (regex.test(field)){
+                document.getElementById("message3").innerHTML = "Accepted";}
+            else{
+                doucment.getElementById("message3").innerHTML = "Denied";}
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+    <form class="one">
+        <input type="checkbox" id="skills"><span class="skills">Checkbox1</span>
+        <br><br>
+        <input type="checkbox" id="skills"><span class="skills">Checkbox2</span>
+        <br><br>
+        <span class="date">Quantity</span><br><input type="number" id="quantity" min="1" max="10">
+        <br><br>
+        <span class="date">Date </span><input type="date">
+        <br><br>
+        <span class="color">Color</span><input type="color">
+    </form>
+    <br>
+
+
+    <form class="two">
+        <span>Field1</span><br>
+        <input id="field1" type="text" onblur="checkField1();"/>
+        <span id="message1"></span><br>
+        
+
+        <span>JavaScript</span><br>
+        <input id="field3" type="text" onblur="checkField3();"/>
+        <span id="message3"></span><br><br>
+        
+        <span>CC - HTML5</span>
+        <br><input id="cc" type="text" name="country-code"
+        pattern="[A-Za-z]{3}" title="Three letter country code"
+        required><br>
+        <input type="submit">
+
+
+    </form>
+</body>
+</html>
