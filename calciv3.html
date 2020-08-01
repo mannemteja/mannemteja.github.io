@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+		<style>
+			.full-width{
+				width:100%;
+			}
+		</style>
+
+		<script>
+			function dis(val){
+				document.getElementById("result").value += val
+			}
+			function disSq(val){
+				var sq = document.getElementById("result").value
+				document.getElementById("result").value += val
+				document.getElementById("history").value = sq*sq
+			}
+			function clr(){
+				document.getElementById("result").value=""
+			}
+
+			function clrh(){
+				document.getElementById("history").value=""
+			}
+
+			// function sin(){
+			// 	var a = document.getElementById("result").value
+			// 	document.getElementById("math").innerHTML = document.write(Math.sin(a))
+			// }
+
+			function solve(){
+				var x = document.getElementById("result").value
+				var y = eval(x)
+
+				document.getElementById("result").value = ""
+
+				if (document.getElementById("history") != ""){
+					document.getElementById("history").value = document.getElementById("history").value + "\n" + x + "=" + y
+				}
+				else{
+					document.getElementById("history").value = document.getElementById("history").value + x + "=" + y
+				}
+			}
+		</script>
+	</head>
+	<body style="font-family: product sans;">
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-3"> <!--padding on the sides-->
+				</div>
+
+				<div class="col-md-6 text-center py-3 shadow">	<!--the entire calculator ui-->
+
+					<div class="row btn btn-dark full-width my-3">
+						<div class="col">
+							CALCULATOR
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col my-3">
+							<textarea style="text-align: right;" readonly id="history" name="history" rows="4" class="full-width p-3"></textarea>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-10">
+							
+							<div class="row">
+								<div class="col-md-9">
+									<input type="text" class="full-width mb-3" id="result"/>
+								</div>
+							
+								<div class="col-md-3">
+									<input type="button" value="<X" class="full-width mb-3 bg-warning font-weight-bold" onclick="clr()"/>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col"> <!--first column of no.s-->
+									<div class="row">
+										<div class="col">
+											<input type="button" value="1" class="full-width mb-1 bg-secondary text-white" onclick="dis('1')"/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col">
+											<input type="button" value="4" class="full-width mb-1 bg-secondary text-white" onclick="dis('4')"/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col">
+											<input type="button" value="7" class="full-width mb-1 bg-secondary text-white" onclick="dis('7')"/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col">
+											<input type="button" value="." class="full-width mb-1 bg-secondary text-white" onclick="dis('.')"/>
+										</div>
+									</div>
+								</div>
+							
+
+							
+								<div class="col"> <!--second column of no.s-->
+									<div class="row">
+										<div class="col">
+											<input type="button" value="2" class="full-width mb-1 bg-secondary text-white" onclick="dis('2')"/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col">
+											<input type="button" value="5" class="full-width mb-1 bg-secondary text-white" onclick="dis('5')"/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col">
+											<input type="button" value="8" class="full-width mb-1 bg-secondary text-white" onclick="dis('8')"/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col">
+											<input type="button" value="0" class="full-width mb-1 bg-secondary text-white" onclick="dis('0')"/>
+										</div>
+									</div>
+								</div>
+							
+
+							
+								<div class="col"> <!--third column of no.s-->
+									<div class="row">
+										<div class="col">
+											<input type="button" value="3" class="full-width mb-1 bg-secondary text-white" onclick="dis('3')"/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col">
+											<input type="button" value="6" class="full-width mb-1 bg-secondary text-white" onclick="dis('6')"/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col">
+											<input type="button" value="9" class="full-width mb-1 bg-secondary text-white" onclick="dis('9')"/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col">
+											<input type="button" value="*" class="full-width bg-secondary text-white font-weight-bold" onclick="dis('*')"/>
+										</div>
+									</div>
+								</div>
+
+								<div class="col"> <!--third column of no.s-->
+									<div class="row">
+										<div class="col">
+											<input type="button" value="sin" class="full-width mb-1 bg-primary text-white" onclick="dis('Math.sin(')"/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col">
+											<input type="button" value="cos" class="full-width bg-primary text-white mb-1" onclick="dis('Math.cos(')"/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col">
+											<input type="button" value="(" class="full-width mb-1 bg-dark text-white" onclick="dis('(')"/>
+										</div>
+									</div>
+									
+									<div class="row">
+										<div class="col">
+											<input type="button" value=")" class="full-width mb-1 bg-dark text-white" onclick="dis(')')"/>
+										</div>
+									</div>
+								
+								</div>
+
+								<div class="col"> <!--third column of no.s-->
+									<div class="row">
+										<div class="col">
+											<input type="button" value="tan" class="full-width mb-1 bg-primary text-white" onclick="dis('Math.tan(')"/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col">
+											<input type="button" value="sq" class="full-width bg-dark text-white mb-1" onclick="disSq('^2')"/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col">
+											<input type="button" value="(" class="full-width mb-1 bg-dark text-white" onclick="dis('(')"/>
+										</div>
+									</div>
+									
+									<div class="row">
+										<div class="col">
+											<input type="button" value=")" class="full-width mb-1 bg-dark text-white" onclick="dis(')')"/>
+										</div>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="row">
+								<div class="col">
+									<input type="button" value="CE" class="full-width mb-3 bg-danger text-white font-weight-bold" id="result" onclick="clrh()"/>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col">
+									<input type="button" value="/" class="full-width mb-1 bg-dark text-white font-weight-bold" onclick="dis('/')"/>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col">
+									<input type="button" value="-" class="full-width mb-1 bg-dark text-white font-weight-bold" onclick="dis('-')"/>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col">
+									<input type="button" value="+" class="full-width mb-1 bg-dark text-white font-weight-bold" onclick="dis('+')"/>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col">
+									<input type="button" value="=" class="full-width mb-1 bg-info text-white" onclick="solve()"/>
+								</div>
+							</div>
+						</div>
+
+						
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</body>
+</html>
