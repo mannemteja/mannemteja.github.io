@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mannem Teja</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script>
+        function removephtext(id){
+            if (id==1){
+                document.getElementById('placeholder-text1').innerHTML=""
+            }
+            else if(id==2){
+                document.getElementById('placeholder-text2').innerHTML=""
+            }
+            else{
+                document.getElementById('placeholder-text3').innerHTML=""
+            }
+        }
+
+        function checkaddphtext(id){
+            if(id==1){
+                var x = document.getElementById('inputf1').value
+                if(x.length==""){
+                    document.getElementById('placeholder-text1').innerHTML="NAME"
+                }
+            }
+            if(id==2){
+                var x = document.getElementById('inputf2').value
+                if(x.length==""){
+                    document.getElementById('placeholder-text2').innerHTML="MAIL"
+                }
+            }
+            if(id==3){
+                var x = document.getElementById('inputf3').value
+                if(x.length==""){
+                    document.getElementById('placeholder-text3').innerHTML="MESSAGE"
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="bg">
+        <div>
+            <div class="header-bg">
+            </div>
+            <div class="myicon">
+            </div>
+        </div>
+
+        <div class="about">
+            <p class="myname">Mannem Teja</p>
+            <p class="about-block">Hey! I'm <span>Mannem</span>. Coding has changed my world. It's not just about apps. Learning to code gave me problem-solving skills and a way to communicate with others on a technical level. I can also develop websites and use my coding skills to get a better job. And I learned it all at SoloLearn where they build your self-esteem and keep you motivated. Join me in this rewarding journey. You'll have fun, get help, and learn along the way!</p>
+        </div>
+
+        <div class="skills-bg">
+            <p class="skills">MY SKILLS</p>
+            <div>
+                <div class="html-icon"></div>
+                <p class="html-text">HTML5</p>
+                <div class="rhf"></div>
+                <div class="rhs"></div>
+            </div>
+            <div>
+                <div class="css-icon"></div>
+                <p class="css-text">CSS3</p>
+                <div class="rcf"></div>
+                <div class="rcs"></div>
+            </div>
+            <div>
+                <div class="js-icon"></div>
+                <p class="js-text">JS</p>
+                <div class="rjf"></div>
+                <div class="rjs"></div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <p class="contact-title">CONTACT ME</p>
+            <div  class="name-cont"></div>
+            <div  class="mail-cont"></div>
+            <div  class="msg-cont"></div>
+
+            <div class="inputs">
+                <input id="inputf1" onclick="removephtext(1);" onblur="checkaddphtext(1);" class="i1">
+                <input id="inputf2" onclick="removephtext(2);" onblur="checkaddphtext(2);" class="i2">
+                <textarea id="inputf3" onclick="removephtext(3);" onblur="checkaddphtext(3);" class="i3"></textarea>
+            </div>
+
+            <div class="contact-text">
+                <p id="placeholder-text1" class="name-text">NAME</p>
+                <p id="placeholder-text2" class="mail-text">MAIL</p>
+                <p id="placeholder-text3" class="msg-text">MESSAGE</p>
+            </div>
+            <button class="btn btn-dark" style="font-family: poppins; font-size: 16px; margin-top:300px;">Submit</button>
+        </div>
+
+        <div class="socmed">
+            <P class="socmed-text">SOCIAL MEDIA</P>
+            <div class="gh-icon"></div>
+            <div class="fb-icon"></div>
+            <div class="tw-icon"></div>
+            <div class="gp-icon"></div>
+
+            <div class="socmed-links">
+                <a class="gh-link" href="/">github.io/mannemteja</a>
+                <a class="fb-link" href="/">facebook.com/mannemteja</a>
+                <a class="tw-link" href="/">twitter.com/mannemteja</a>
+                <a class="gp-link" href="/">plus.google.com/mannemteja</a>
+            </div>
+            
+        </div>
+    </div>    
+</body>
+</html>
