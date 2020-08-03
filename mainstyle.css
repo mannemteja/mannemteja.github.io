@@ -1,0 +1,215 @@
+.bg{
+    margin-top: 0em;
+    margin-left: 0em;
+    position: relative;
+    width: 1320px;
+    height: 2428px;
+    background: #DCE2E8;
+}
+
+.header-bg{
+    position: absolute;
+    width: 1320px;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+    background-image: url('patrick-tomasso-QMDap1TAu0g-unsplash.jpg');
+    background-size:cover;
+}
+
+.bg-img{
+    width: 1280px;
+    height: 959px;
+}
+
+.myname{
+    position: absolute;
+    width: 338px;
+    height: 72px;
+    left: 120px;
+    top: 425px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.myicon{
+    background-image:url('my image.png');
+    background-size:cover;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    left: 120px;
+    top: 190px;
+    border: 5px solid #DCE2E8;
+}
+
+.about-block{
+    position: absolute;
+    width: 1080px;
+    height: 128px;
+    left: 120px;
+    top: 537px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+
+    text-align: justify;
+
+    color: #000000;
+}
+
+.about-block span{
+    font-weight: 550;
+}
+.skills-bg{
+    position: absolute;
+    width: 1080px;
+    height: 345px;
+    left: 120px;
+    top: 709px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+.skills{
+    position: absolute;
+    width: 118.38px;
+    height: 36px;
+    left: 52px;
+    top: 30px;
+    color: #000000;
+}
+.html-icon{
+    position: absolute;width: 99.69px;height: 100px;left: 123.85px;top: 132px;background: url(html.png);background-size: cover;
+}
+.html-text{
+    position:absolute;width: 78.92px; height: 21px;left: 136px;top: 237px;font-weight: bold;font-size: 14px;letter-spacing: 0.5em;
+}
+.rhs{
+    position: absolute;width: 103.85px;height: 20px;left: 230px;top: 163px;border: 3px solid #000000;
+}
+.rhf{
+    position: absolute;width: 72.69px;height: 20px;left: 230px;top: 163px;background: #FF5722;
+}
+.css-icon{
+    position: absolute;width: 99.69px;height: 100px;left: 418.5px;top: 132px;background: url(css.png);background-size: cover;
+}
+.css-text{
+    position: absolute;width: 78.92px;height: 21px;left: 438.04px;top: 237px;font-weight: bold;font-size: 14px;letter-spacing: 0.5em;
+
+}
+.rcs{
+    position: absolute;width: 103.85px;height: 20px;left: 544.15px;top: 163px;border: 3px solid #000000;
+}
+.rcf{
+    position: absolute;width: 72.69px;height: 20px;left: 544.15px;top: 163px;background: #2196F3;
+}
+
+.js-icon{
+    position: absolute;width: 70.62px;height: 100px;left: 734.19px;top: 132px;background: url(js.png);background-size: cover;
+}
+.js-text{
+    position: absolute;width: 78.92px;height: 21px;left: 757.04px;top: 237px;font-weight: bold;font-size: 14px;letter-spacing: 0.5em;
+
+}
+.rjs{
+    position: absolute;width: 103.85px;height: 20px;left: 830.77px;top: 163px;border: 3px solid #000000;
+}
+.rjf{
+    position: absolute;width: 72.69px;height: 20px;left: 830.77px;top: 163px;background: #F2BF22;
+}
+.contact{
+    position: absolute;
+    width: 1080px;
+    height: 326px;
+    left: 120px;
+    top: 1116px;
+}
+.contact-title{
+    left:0px;
+    top:0px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+.name-cont{
+    position: absolute;width: 485px;height: 50px;left: 0px;top: 56px;background: #FFFFFF;border-radius: 5px;border:none;padding-left:15px;
+}
+.mail-cont{
+    position: absolute;width: 556px;height: 50px;left: 524px;top: 56px;background: #FFFFFF;border-radius: 5px;border:none;padding-left:15px;
+}
+.msg-cont{
+    position: absolute;width: 1080px;height: 200px;left: 0px;top: 126px;background: #FFFFFF;border-radius: 5px;border:none;padding-left:15px; padding-top:15px;
+}
+
+.i1{
+    position: absolute;width: 485px;height: 50px;left: 0px;top: 56px;background: #FFFFFF;border-radius: 5px;border:none;padding-left:15px;
+}
+.i2{
+    position: absolute;width: 556px;height: 50px;left: 524px;top: 56px;background: #FFFFFF;border-radius: 5px;border:none;padding-left:15px;
+}
+.i3{
+    position: absolute;width: 1080px;height: 200px;left: 0px;top: 126px;background: #FFFFFF;border-radius: 5px;border:none;padding-left:15px;padding-top:14px;
+}
+
+.contact-text{
+    font-family: Poppins;font-style: normal;font-weight: bold;font-size: 14px;line-height: 21px;letter-spacing: 0.5em;color: #000000;opacity: 0.5;
+}
+.name-text{
+    position: absolute;left:15px; top:70px;
+}
+.mail-text{
+    position: absolute;left:539px; top:70px;
+}
+.msg-text{
+    position: absolute;left:15px; top:140px;
+}
+
+.socmed{
+    position: absolute;left:120px; top:1560px;
+}
+.socmed-text{
+    position: absolute;width: 166px;height: 36px;left: 0px;top: 0px;font-family: Poppins;font-style: normal;font-weight: 500;font-size: 24px;line-height: 36px;color: #000000;
+
+}
+.gh-icon{
+    position: absolute;width: 74px;height: 74px;left: 55px;top: 86px;background: url(052-github.png);background-size: cover;
+}
+.fb-icon{
+    position: absolute;width: 74px;height: 74px;left: 55px;top: 210px;background: url(063-facebook.png);background-size: cover;
+}
+.tw-icon{
+    position: absolute;width: 74px;height: 74px;left: 55px;top: 334px;background: url(016-twitter-1.png);background-size: cover;
+}
+.gp-icon{
+    position: absolute;width: 74px;height: 74px;left: 55px;top: 458px;background: url(051-google-plus.png);background-size: cover;
+}
+.socmed-links{
+    position:absolute;left:148px;font-family: Poppins;font-style: italic;font-weight: normal;font-size: 24px;line-height: 36px;color: #000000;
+}
+.gh-link{
+    position:absolute;top:105px;
+}
+.fb-link{
+    position:absolute;top:239px;
+}
+.tw-link{
+    position:absolute;top:353px;
+}
+.gp-link{
+    position:absolute;top:477px;
+}
